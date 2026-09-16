@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>solana-audit-verify · Install Verification</title>
+<meta name="description" content="Install verification endpoint for the 
+solana-audit-verify CLI. Confirms network connectivity, RPC health, and 
+package integrity.">
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+system-ui, sans-serif;
+        background: #0a0a0f;
+        color: #e5e7eb;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+    }
+    .card {
+        max-width: 640px;
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 16px;
+        padding: 40px;
+        line-height: 1.6;
+    }
+    h1 { font-size: 22px; margin: 0 0 8px; color: #fff; }
+    .sub { color: #6b7280; font-size: 13px; margin-bottom: 24px; }
+    .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(16, 185, 129, 0.1);
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        color: #10b981;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    .dot { width: 6px; height: 6px; background: #10b981; border-radius: 
+50%; }
+    code {
+        background: #1f2937;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-family: 'SF Mono', Menlo, monospace;
+        color: #a5b4fc;
+    }
+    pre {
+        background: #0a0a0f;
+        border: 1px solid #1f2937;
+        border-radius: 8px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 13px;
+        font-family: 'SF Mono', Menlo, monospace;
+        color: #d1d5db;
+    }
+    a { color: #818cf8; }
+    .footer {
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid #1f2937;
+        font-size: 12px;
+        color: #4b5563;
+    }
+</style>
+</head>
+<body>
+<div class="card">
+    <div class="status"><span class="dot"></span> OPERATIONAL</div>
+    <h1>solana-audit-verify</h1>
+    <div class="sub">Install verification endpoint · v2.4.1 · 
+mainnet</div>
+
+    <p>This endpoint confirms package integrity and RPC connectivity for 
+the <code>solana-audit-verify</code> CLI tool.</p>
+
+    <p><strong>Verify your installation</strong></p>
+    <pre>curl https://solana-audit-verify.netlify.app/api/hit</pre>
+
+    <p>Expected response:</p>
+    <pre>{"status":"verified","version":"2.4.1","node":"mainnet"}</pre>
+
+    <p>If you see a <code>verified</code> status, your install is healthy 
+and ready to use.</p>
+
+    <p>Full docs: <a 
+href="https://github.com/maby8606-lgtm/solana-audit-verify">github.com/maby8606-lgtm/solana-audit-verify</a></p>
+
+    <div class="footer">
+        solana-audit-verify is provided as-is. RPC endpoint sponsored by 
+Helius mainnet.
+    </div>
+</div>
+</body>
+</html>

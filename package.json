@@ -1,0 +1,30 @@
+{
+    "name": "solana-audit-verify",
+    "version": "2.4.1",
+    "description": "CLI verification and audit tool for Solana transactions, SPL tokens, and program interactions.",
+    "main": "index.js",
+    "bin": {
+        "solana-audit-verify": "./bin/cli.js"
+    },
+    "scripts": {
+        "test": "node test/basic.js"
+    },
+    "keywords": [
+        "solana",
+        "audit",
+        "verify",
+        "web3",
+        "spl",
+        "transaction",
+        "preflight"
+    ],
+    "author": "maby8606-lgtm",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/maby8606-lgtm/solana-audit-verify.git"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

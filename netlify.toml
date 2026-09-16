@@ -1,0 +1,18 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# /api/* must come BEFORE the catch-all
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# catch-all LAST
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
